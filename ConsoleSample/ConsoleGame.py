@@ -1,4 +1,4 @@
-﻿from FlippingGame import FlippingGame
+﻿from FlippingGame import FlippingGame, GameError
 from System.Threading import Thread
 
 def greeting():
@@ -16,12 +16,7 @@ def get_wager(game):
         except ValueError:
             print "Wager must be a number (was '%s')." % wager
         else:
-            if w < 1:
-                print "You must wager at least 1 credit."
-            elif w > game.bankroll:
-                print "You cannot wager more than your bankroll."
-            else:
-                return w
+            return w
 
 def get_guess():
     while True:
@@ -37,29 +32,38 @@ def spin():
         print i, '\r',
         Thread.Sleep(60)
     
-    print
+    print '\r'
 
 def turn(game):
-    print
     print "Bankroll:", game.bankroll
 
-    wager = get_wager(game)
-    guess = get_guess()
+    while True:
+        wager = get_wager(game)
+        msg = game.check_wager(wager)
+        if msg:
+            print msg
+        else:
+            break
 
-    spin()
+    guess = get_guess()
 
     result, toss = game.flip(guess, wager)
 
+    spin()
+    
     print "Toss:", toss
     if result:
         print "YOU WIN!"
     else:
         print "Sorry, better luck next time."
 
+    print
+
     if game.bankroll == 0:
         return False
 
     again = raw_input("Play again? [Y/n]")
+    print
     return len(again) == 0 or again[0] in "Yy"
 
 def main():

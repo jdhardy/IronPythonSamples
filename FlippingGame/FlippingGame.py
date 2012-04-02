@@ -6,7 +6,17 @@ class FlippingGame(object):
         self.bankroll = self.initial_bankroll = bankroll
         self.rand = Random(seed) if seed is not None else Random()
 
+    def check_wager(self, wager):
+        if wager < 1:
+            return "You must wager at least one credit."
+        
+        if wager > self.bankroll:
+            return "You cannot wager more than your bankroll."
+
     def flip(self, guess, wager):
+        assert 1 <= wager <= self.bankroll
+        assert guess in "TF"
+
         result = self._do_flip()
         self.history.append((result, guess, wager))
         if result == guess:
