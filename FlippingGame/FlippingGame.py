@@ -15,7 +15,7 @@ class FlippingGame(object):
 
     def flip(self, guess, wager):
         assert 1 <= wager <= self.bankroll
-        assert guess in "TF"
+        assert guess in "TH"
 
         result = self._do_flip()
         self.history.append((result, guess, wager))
@@ -27,4 +27,4 @@ class FlippingGame(object):
             return False, result
 
     def _do_flip(self):
-        return "TF"[self.rand.Next(2)]
+        return "TH"[self.rand.Next(2)]

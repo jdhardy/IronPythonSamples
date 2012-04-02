@@ -11,6 +11,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FlippingGame", "FlippingGam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSample", "ConsoleSample\ConsoleSample.csproj", "{40BC8BDE-81E0-48EC-9AC2-FB2A739E5144}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsSample", "WinFormsSample\WinFormsSample.csproj", "{1940BB9C-9F27-417B-A227-2E69C0A8C172}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,16 @@ Global
 		{40BC8BDE-81E0-48EC-9AC2-FB2A739E5144}.Release|Mixed Platforms.Build.0 = Release|x86
 		{40BC8BDE-81E0-48EC-9AC2-FB2A739E5144}.Release|x86.ActiveCfg = Release|x86
 		{40BC8BDE-81E0-48EC-9AC2-FB2A739E5144}.Release|x86.Build.0 = Release|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Debug|x86.ActiveCfg = Debug|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Debug|x86.Build.0 = Debug|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|Any CPU.ActiveCfg = Release|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|x86.ActiveCfg = Release|x86
+		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
