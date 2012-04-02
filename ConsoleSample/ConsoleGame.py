@@ -20,10 +20,10 @@ def get_wager(game):
 
 def get_guess():
     while True:
-        guess = raw_input("Guess [T/F]: ")
+        guess = raw_input("Guess [T/H]: ")
         guess = guess.upper()
-        if len(guess) != 1 or guess not in "TF":
-            print "Enter only T or F."
+        if len(guess) != 1 or guess not in "TH":
+            print "Enter only T or H."
         else:
             return guess
 
