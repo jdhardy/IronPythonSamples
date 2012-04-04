@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSample", "ConsoleSam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsSample", "WinFormsSample\WinFormsSample.csproj", "{1940BB9C-9F27-417B-A227-2E69C0A8C172}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyWpfSample", "PyWpfSample\PyWpfSample.pyproj", "{2F62608C-652C-406B-9775-4CE34E151D45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,12 @@ Global
 		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|Mixed Platforms.Build.0 = Release|x86
 		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|x86.ActiveCfg = Release|x86
 		{1940BB9C-9F27-417B-A227-2E69C0A8C172}.Release|x86.Build.0 = Release|x86
+		{2F62608C-652C-406B-9775-4CE34E151D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F62608C-652C-406B-9775-4CE34E151D45}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2F62608C-652C-406B-9775-4CE34E151D45}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2F62608C-652C-406B-9775-4CE34E151D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F62608C-652C-406B-9775-4CE34E151D45}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2F62608C-652C-406B-9775-4CE34E151D45}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

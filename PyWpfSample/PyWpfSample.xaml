@@ -1,0 +1,42 @@
+﻿<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="Coin Flipping" Loaded="Window_Loaded" ResizeMode="CanMinimize"> 
+       <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Content="Bankroll:" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <Label Content="Wager:" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <Label Content="Guess:" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <RadioButton Content="Heads" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" IsChecked="True" GroupName="guessButtons" Name="guessHeadsButton" />
+                <RadioButton Content="Tails" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="55,0,0,0" GroupName="guessButtons" Name="guessTailsButton" />
+                <Label Content="?" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="bankrollLabel" />
+                <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="95" Name="wagerBox" GotFocus="wagerBox_GotFocus" Text="50" TextAlignment="Right" Margin="0,2" />
+            </Grid>
+            <Button Content="Flip!" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Name="flipButton" MinHeight="28" MinWidth="75" Click="flipButton_Click" Margin="8,0" />
+        </Grid>
+        <Label Content="?" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Name="resultLabel" />
+        <Label Content="Error" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Red" Visibility="Collapsed" Name="errorLabel"></Label>
+    </Grid>
+</Window> 
