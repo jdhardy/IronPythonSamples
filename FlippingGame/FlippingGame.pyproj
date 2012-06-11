@@ -5,7 +5,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2f477831-52b5-4184-b579-b5e3a0db2d66}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FlippingGame.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  android:id="@+id/widget36"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <TableLayout
+    android:id="@+id/widget37"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true">
+    <TableRow
+      android:id="@+id/widget42"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+        android:id="@+id/widget45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bankroll" />
+      <TextView
+        android:id="@+id/bankrollLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\?" />
+    </TableRow>
+    <TableRow
+      android:id="@+id/widget43"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+        android:id="@+id/widget46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wager" />
+      <EditText
+        android:id="@+id/wagerBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numeric="integer" />
+    </TableRow>
+    <TableRow
+      android:id="@+id/widget44"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+        android:id="@+id/widget47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess" />
+      <RadioButton
+        android:id="@+id/guessHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heads"
+        android:checked="true" />
+      <RadioButton
+        android:id="@+id/guessTails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tails" />
+    </TableRow>
+    <TableRow
+      android:id="@+id/widget53"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\?"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_span="3" />
+    </TableRow>
+    <TableRow
+      android:id="@+id/widget55"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <Button
+        android:id="@+id/flipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flip!" />
+      <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+    </TableRow>
+  </TableLayout>
+</RelativeLayout>
