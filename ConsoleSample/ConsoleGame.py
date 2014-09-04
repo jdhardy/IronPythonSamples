@@ -1,4 +1,4 @@
-﻿from FlippingGame import FlippingGame, GameError
+﻿from FlippingGame import FlippingGame
 from System.Threading import Thread
 
 def greeting():
