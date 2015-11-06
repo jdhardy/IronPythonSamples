@@ -1,5 +1,8 @@
 from System import Random
 
+class GameError(Exception):
+    pass
+
 class FlippingGame(object):
     def __init__(self, bankroll=500, history=[], seed=None):
         self.history = history
