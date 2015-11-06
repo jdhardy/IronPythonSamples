@@ -11,7 +11,7 @@ clr.AddReference("gdk-sharp") # for colors
 import Gtk
 import Gdk # for colors
 
-import FlippingGame
+from FlippingGame import FlippingGame
 
 class GtkSampleWindow(Gtk.Window):
     def __init__(self, title):
